@@ -1,8 +1,8 @@
 const axios = require('axios')
 
-const { CONVERSATION_SERVICE_SID, WEBHOOK_URL, FLOW_SID, PASSWORD, USERNAME } = process.env
+const { CONVERSATION_SERVICE_SID, WEBHOOK_URL, FLOW_SID, PASSWORD, USERNAME, AUTH_SMOOCH } = process.env
 
-const auth = "Basic YWN0XzYwYmY4M2MzMTA1NGQzMDBkM2ZmNzI1ZTplVTVDbVpFUk9ZZHF0bWQ0amwwNU5pTzZkdERROEpCLTFLT0hyclVVMXkyaGNJcDZLa3VQVGluOWRhdEczTTZlbFJ6LXlJMU9wczN5RERIaXczeW5UUQ=="
+const auth = `Basic ${AUTH_SMOOCH}`
 exports.handler = async function (context, event, callback) {
     console.log(event)
 
