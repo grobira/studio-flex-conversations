@@ -2,3 +2,4 @@
 */node_modules
 */.twilio*
 custom-prog-chat
+*/.prod.env
